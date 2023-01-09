@@ -30,6 +30,10 @@ const Registration = () => {
                         <input type="text"  name="data[Klasa]" required />
                         <label>Klasa</label>
                     </div>
+                    <div className="user-box">  
+                        <input type="text" name="data[Szkola]" required />
+                        <label>Szkoła</label>
+                    </div>
                     <div className="user-box">
                         <input type="text"  name="data[Profil]" required />
                         <label>Profil</label>
