@@ -14,7 +14,7 @@ const App = () => {
     return (
         <div>
             <Navbar page={page} plan={plan} contact={contact} setMain={setMain} setRegistration={setRegistration} />
-            {!page ? <Main plan={plan} contact={contact} /> : <Registration />}
+            {!page ? <Main plan={plan} contact={contact} /> : <Registration page={page} setMain={setMain} setRegistration={setRegistration} />}
         </div>
     )
 }

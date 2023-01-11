@@ -18,6 +18,7 @@ body{
   align-items: center;
   justify-content: center;
   padding: 4rem 0;
+  position: relative;
 }
 
 .menu{
@@ -151,7 +152,7 @@ body{
 
 .contact{
   background-color: #222;
-  padding: 1rem 20rem;
+  padding: 1rem 10rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -159,6 +160,7 @@ body{
 .contact a{
   color: #eee;
 }
+
 
 @media (min-width: 960px){
   li{
@@ -199,6 +201,11 @@ body{
 
   .contact-item:hover:after{
     transform: scaleX(1);
+  }
+
+  .divider{
+    display: flex;
+    color: #fff;
   }
 
   .place:after{
@@ -264,9 +271,15 @@ body{
 
   .contact{
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem 0 !important;
+  }
+
+
+  .congrats-message{
+    width: 80% !important;
+  }
+
+  .thank-text{
+    font-size: 2rem !important;
   }
 }
 
@@ -363,4 +376,64 @@ button {
 button:hover {
   color: #fff;
   background-color: #1056a7;
+}
+
+.err-message{
+  display: none;
+  width: 100%;
+  text-align: center;
+  font-weight: 800;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  margin: 2rem 0;
+  color: rgb(226, 78, 78);
+}
+
+.error{
+  display: flex !important;
+}
+
+.login-posted{
+  display: none;
+}
+
+.congrats-message{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+
+  width: 50%;
+  height: 80%;
+
+  background-color: #141e30;
+
+  border-radius: 2rem;
+}
+
+.posted{
+  display: flex !important;
+}
+
+.thank-text{
+  padding: 2rem;
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.76);
+}
+.thank-text span{
+  color:#1056a7;
+}
+
+.thank-info{
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: rgba(255, 255, 255, 0.63);
+  font-size: 1.5rem;
 }

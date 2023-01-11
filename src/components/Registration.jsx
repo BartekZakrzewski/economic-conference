@@ -1,21 +1,35 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 
-const Registration = () => {
+const Registration = ({ page, setMain, setRegistration }) => {
+    const [isPosted, setPosted] = useState(false);
+    const [err, setErr] = useState(false);
+
     const form = useRef(null)
-    const submit = e => {
+    const submit = async (e) => {
+        setErr(false);
         e.preventDefault();
-        fetch(form.current.action, {
+        await fetch(form.current.action, {
             method : "POST",
-            body: new FormData(document.getElementById("sheetdb-form")),
+            body: new FormData(form.current),
         }).then(
             response => response.json()
         ).then(() => {
+            setPosted(true);
+            setTimeout(() => {
+                setPosted(false);
+                setMain();
+            }, 10000);
+        }).catch(err => {
+            setErr(true);
+            setTimeout(() => {
+                setErr(false);
+            }, 1000);
         });
     };
 
     return (
-        <div className="registration-container">
-            <div className="login-box">
+        <div className={`registration-container ${isPosted &&  'registration-posted'}`}>
+            <div className={`login-box ${isPosted && 'login-posted'}`}>
                 <h2>Rejestracja</h2>
                 <form action="https://sheetdb.io/api/v1/baeke8zt03kdn" onSubmit={submit} method="POST" id="sheetdb-form" ref={form}>
                     <div className="user-box">
@@ -56,8 +70,19 @@ const Registration = () => {
                     </div>
 
                     <button type="submit">WYŚLIJ</button>
+                    <div className={`err-message ${err && 'error'}`}>Nie udało się wysłać zgłoszenia, spróbuj ponownie!</div>
                 </form>
             </div> 
+
+            <div className={`congrats-message ${isPosted && 'posted'}`}>
+                <div className="thank-text">
+                    Dziękujemy za rejestrację na naszą <span>konferencję</span>!
+                </div>
+                <div className="thank-info">
+                    <div className="time">📅 Widzimy się 9 i 10 Lutego!</div>
+                    <a target="_blank" href='https://goo.gl/maps/HmDgq3teU9ja9Eoq6' className="place"><span className='span'>📍 </span><span>1 LO | Łódź, Więckowskiego 41 </span></a>
+                </div>
+            </div>
         </div>
     )
 }
