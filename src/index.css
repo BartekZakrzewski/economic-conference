@@ -161,6 +161,10 @@ body{
   color: #eee;
 }
 
+.rules-of-privacy{
+  background-color: #202020;
+}
+
 
 @media (min-width: 960px){
   li{
