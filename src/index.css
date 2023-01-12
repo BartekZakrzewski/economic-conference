@@ -271,8 +271,13 @@ body{
 
   .contact{
     flex-direction: column;
+    padding: 1rem 0 !important;
   }
 
+  .contact-item{
+    width: 100%;
+    text-align: center;
+  }
 
   .congrats-message{
     width: 80% !important;
@@ -325,40 +330,18 @@ body{
   transition: .5s;
 }
 
+@media (max-width: 960px){
+  .long-text label{
+    font-size: .8rem !important;
+  }
+}
+
 .login-box .user-box input:focus ~ label,
 .login-box .user-box input:active ~ label{
   top: -20px;
   left: 0;
   color: #03e9f4;
   font-size: 12px;
-}
-
-.login-box form a {
-  position: relative;
-  display: inline-block;
-  padding: 10px 20px;
-  color: #03e9f4;
-  font-size: 16px;
-  text-decoration: none;
-  text-transform: uppercase;
-  overflow: hidden;
-  transition: .5s;
-  margin-top: 40px;
-  letter-spacing: 4px
-}
-
-.login-box a:hover {
-  background: #03e9f4;
-  color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 5px #03e9f4,
-              0 0 25px #03e9f4,
-              0 0 50px #03e9f4,
-              0 0 100px #03e9f4;
-}
-
-.user-box:nth-child(7) input, .user-box:nth-child(8) input{
-  padding-bottom: 2rem;
 }
 
 button {
@@ -376,6 +359,20 @@ button {
 button:hover {
   color: #fff;
   background-color: #1056a7;
+}
+
+.checkbox{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.checkbox > input{
+  cursor: pointer;
+}
+.checkbox label > a{
+  color: #1056a7;
 }
 
 .err-message{

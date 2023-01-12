@@ -56,17 +56,14 @@ const Registration = ({ page, setMain, setRegistration }) => {
                         <input type="email" name="data[Email]" required />
                         <label>Email</label>
                     </div>
-                    <div className="user-box">
+                    <div className="user-box long-text">
                         <input type="text"  name="data[1pytanie]" required />
                         <label>Czego chciałbys dowiedzieć się na konferencji?</label>
                     </div>
-                    <div className="user-box">
-                        <input type="text"  name="data[2pytanie]" />
-                        <label>Jakiego prelegenta wyczekujesz najbardziej? *Nie wymagane* </label> 
-                    </div>
-                    <div className="user-box">
-                        <input type="text"  name="data[3pytanie]" required />
-                        <label>Jak Twoja obecność sprawi, że inni uczestnicy zaangażują się w konferencję? </label> 
+                    
+                    <div className="checkbox">
+                        <input type="checkbox" name="data[zasady]" required/>
+                        <label>Akceptuję <a target="_blank" href='/zasady-prywatnosci.pdf'>Zasady Prywatności</a></label>
                     </div>
 
                     <button type="submit">WYŚLIJ</button>
