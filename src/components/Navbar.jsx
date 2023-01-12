@@ -27,7 +27,7 @@ const Navbar = ({page, plan, contact, setRegistration, setMain}) => {
                 <li className={!page ? "navitem" : "none"} onClick={() => scrollId(plan)}>
                     Plan
                 </li>
-                <li className='navitem' onClick={() => {
+                <li className={!page ? "navitem" : "none"} onClick={() => {
                     setOpenMenu(false);
                     setRegistration();
                 }}>

@@ -154,7 +154,7 @@ body{
   background-color: #222;
   padding: 1rem 10rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 .contact a{
@@ -181,6 +181,10 @@ body{
 
   li:hover:after{
     transform: scaleX(1);
+  }
+
+  .contact{
+    gap: 2rem;
   }
 
   .contact-item{
@@ -272,6 +276,7 @@ body{
   .contact{
     flex-direction: column;
     padding: 1rem 0 !important;
+    gap: .5rem;
   }
 
   .contact-item{
