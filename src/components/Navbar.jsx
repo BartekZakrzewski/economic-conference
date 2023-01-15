@@ -17,12 +17,12 @@ const Navbar = ({page, plan, contact, setRegistration, setMain}) => {
             <div className={openMenu ? "menu rotate" : "menu"} onClick={() => setOpenMenu(!openMenu)}>
                 <GiHamburgerMenu />
             </div>
-            <ul className={openMenu ? "navbar" : "navbar isclosed"}>
-                <li className='navitem' onClick={() => {
+            <ul className={`${openMenu ? "navbar" : "navbar isclosed"}`}>
+                <li className={`navitem ${!page && 'disable'}`} onClick={() => {
                     setOpenMenu(false);
                     setMain();
                 }}>
-                    {!page ? "Info" : "Strona główna"}
+                    {page && "Strona główna"}
                 </li>
                 <li className={!page ? "navitem" : "none"} onClick={() => scrollId(plan)}>
                     Plan

@@ -12,6 +12,10 @@ body{
   background: linear-gradient(#141e30, #243b55);
 }
 
+.disable{
+  display: none;
+}
+
 .registration-container{
   min-height: 100vh;
   display: flex;
@@ -56,6 +60,8 @@ body{
   color: #fff;
   font-size: 1.5rem;
   font-weight: 700;
+
+  background-image: linear-gradient(#222, transparent);
 }
 
 .navitem{
@@ -139,6 +145,8 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+
   padding: 10rem 2rem;
   width: 100%;
 
@@ -165,6 +173,77 @@ body{
   background-color: #202020;
 }
 
+.plan-container{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  row-gap: 1rem;
+
+  margin-bottom: 1.5rem;
+}
+
+.plan-container > *{
+  border-bottom: 1px solid #243b55;
+}
+
+.plan-header{
+  color: #243b55;
+  font-size: 2rem;
+}
+
+.plan-time{
+  font-size: 1.2rem;
+}
+
+.plan-cell{
+  text-align: left;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+.plan-cell:has(span){
+  gap: .2rem;
+}
+
+.plan-date{
+  font-size: 1.5rem;
+  color: #243b55;
+}
+
+.infos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 2rem;
+  font-size: 1rem;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+
+  background-color: #141e30;
+  padding: 1rem;
+
+  border-radius: .3rem;
+  
+  color: #eee;
+
+  max-width: 500px;
+}
+
+.i-list{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+  padding-left: .7rem;
+  color: rgba(238, 238, 238, 0.801);
+}
 
 @media (min-width: 960px){
   li{
@@ -246,7 +325,8 @@ body{
   .navbar{
     text-align: right;
     list-style: none;
-    color: rgb(196, 222, 247);
+    color: #3169aa;
+    background: none;
     font-size: 1.5rem;
     font-weight: 600;
     padding: 0 !important;
@@ -294,6 +374,24 @@ body{
 
   .thank-text{
     font-size: 2rem !important;
+  }
+
+  .plan{
+    padding: 2rem 0;
+  }
+
+  .plan-header{
+    font-size: 1.2rem;
+    padding: .25rem;
+  }
+
+  .plan-time{
+    font-size: .7rem;
+  }
+
+  .plan-cell{
+    font-size: .7rem;
+    padding: .25rem;
   }
 }
 

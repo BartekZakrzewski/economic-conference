@@ -60,6 +60,10 @@ const Registration = ({ page, setMain, setRegistration }) => {
                         <input type="text"  name="data[1pytanie]" required />
                         <label>Czego chciałbys dowiedzieć się na konferencji?</label>
                     </div>
+                    <div className="user-box">
+                        <input type="text"  name="data[uwagi]" required />
+                        <label>Uwagi (nieobowiazkowe)</label>
+                    </div>
                     
                     <div className="checkbox">
                         <input type="checkbox" name="data[zasady]" required/>
