@@ -62,20 +62,51 @@ const Main = ({plan, contact}) => {
           
           <div className="plan-time">13:40 - 14:00</div>
 
-            <div className="plan-cell">Zakończenie/podsumowanie konferencji</div>
+            <div className="plan-cell">Przerwa kawowa</div>
             <div className="plan-cell"></div>
           
-          <div className="plan-time">14:00 - 14:15</div>
+          <div className="plan-time">14:00 - 15:00</div>
 
             <div className="plan-cell">Dyskusja pomiędzy uczniami i prelegentami</div>
+            <div className="plan-cell"></div>
+          
+          <div className="plan-time">15:00 - 15:15</div>
+
+            <div className="plan-cell">Zakończenie wydarzenia</div>
             <div className="plan-cell"></div>
 
             <div className="plan-cell"></div>
             <div className="plan-date">10.02</div>
             <div className="plan-cell"></div>
 
+          <div className="plan-time">10:30 - 11:00</div>
+
+            <div className="plan-cell">Rejestracja uczestników </div>
             <div className="plan-cell"></div>
-            <div className="plan-date">Reszta planu zostanie podana niedługo</div>
+          
+          <div className="plan-time">11:00 - 11:10</div>
+
+            <div className="plan-cell">Otwarcie konferencji</div>
+            <div className="plan-cell"></div>
+          
+          <div className="plan-time">11:10 - 12:10</div>
+
+            <div className="plan-cell">Show</div>
+            <div className="plan-cell">Kuba Midel</div>
+          
+          <div className="plan-time">13:00 - 13:20</div>
+
+            <div className="plan-cell">Pytania uczniów</div>
+            <div className="plan-cell"></div>
+          
+          <div className="plan-time">13:20 - 13:30</div>
+
+            <div className="plan-cell">Zakończenie konferencji</div>
+            <div className="plan-cell"></div>
+          
+          <div className="plan-time">13:30 - 13:45</div>
+
+            <div className="plan-cell">Przerwa kawowa</div>
             <div className="plan-cell"></div>
             
         </div>
@@ -94,7 +125,7 @@ const Main = ({plan, contact}) => {
             Do udziału w konferencji zostali zaproszeni uczniowie pięciu łódzkich liceów: I LO, III LO, XXI LO, PLOPŁ, PLOUŁ
           </div>
           <div className="info info-text">
-            Konferencja będzie zawierała elementy debaty. Chętni uczniowie stworzą 3-5 osobowe grupy i przygotują plakat (w formie tradycyjnej lub elektronicznej). Elementem plakatu ma być sformułowanie tezy dotyczącej inflacji. Podczas debaty uczniowie będą musieli obronić swoją tezę. Z tego powodu bardzo ważne jest, dokładne przygotowanie się wybranych uczestników do wystąpienia. Ciekawe komu uda się przekonać ekspertów do swojej tezy? Powodzenia!
+            Konferencja będzie zawierała elementy debaty. Chętni uczniowie stworzą 3-5 osobowe grupy i przygotują plakat (w formie tradycyjnej lub elektronicznej). Elementem plakatu ma być sformułowanie tezy dotyczącej inflacji. Podczas debaty uczniowie będą musieli obronić swoją tezę. Z tego powodu bardzo ważne jest, dokładne przygotowanie się wybranych uczestników do wystąpienia.
           </div>
         </div>
       </div>
