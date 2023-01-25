@@ -253,6 +253,11 @@ body{
   text-align: left;
 }
 
+.i-short{
+  width: 100%;
+  display: flex;
+}
+
 @media (min-width: 960px){
   li{
     position: relative;
