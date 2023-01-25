@@ -122,7 +122,7 @@ const Main = ({plan, contact}) => {
             </ul>
           </div>
           <div className="info info-list">
-            <div className="info-header">Drugiego dnia wystąpi:</div>
+            <div className="info-header i-short">Drugiego dnia wystąpi:</div>
             <ul className="i-list">
               <li>Kuba Midel - łódzki biznesmen i inwestor</li>
             </ul>
