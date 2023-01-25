@@ -121,6 +121,12 @@ const Main = ({plan, contact}) => {
               <li>Pan Piotr Jakubiak (prezes łódzkiej firmy Dywilan)</li>
             </ul>
           </div>
+          <div className="info info-list">
+            <div className="info-header">Drugiego dnia wystąpi:</div>
+            <ul className="i-list">
+              <li>Kuba Midel - łódzki biznesmen i inwestor</li>
+            </ul>
+          </div>
           <div className="info info-text">
             Do udziału w konferencji zostali zaproszeni uczniowie pięciu łódzkich liceów: I LO, III LO, XXI LO, PLOPŁ, PLOUŁ
           </div>
